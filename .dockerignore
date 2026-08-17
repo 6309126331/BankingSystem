@@ -1,0 +1,10 @@
+.git
+.gitignore
+.github
+bin
+*.class
+*.log
+README.md
+.project
+.classpath
+.settings
