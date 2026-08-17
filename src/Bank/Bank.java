@@ -26,7 +26,7 @@ public class Bank implements Serializable {
 		return i;
 	}
 	
-	public int addAccount(String name, double balance, double maxWithLimit )
+	public int addAccount(String name, double balance, double maxWithLimit ) throws Exception
 	{
 		SavingsAccount acc=new SavingsAccount(name, balance, maxWithLimit);
 		return this.addAccount(acc);
@@ -38,7 +38,7 @@ public class Bank implements Serializable {
 		return this.addAccount(acc);
 	}
 	
-	public int addAccount(String name, String  institutionName, double balance, double min_balance)
+	public int addAccount(String name, String  institutionName, double balance, double min_balance) throws Exception
 	{
 		StudentAccount acc= new StudentAccount(name,balance,institutionName);
 		return this.addAccount(acc);
@@ -53,7 +53,7 @@ public class Bank implements Serializable {
 			{
 				break;
 			}
-			if(getAccounts()[i].acc_num.equals(aacountNum))
+			if(getAccounts()[i].getAccNum().equals(aacountNum))
 			{
 				return getAccounts()[i];
 			}
