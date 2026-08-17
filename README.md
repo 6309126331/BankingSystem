@@ -51,3 +51,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Special thanks to Java Swing for the GUI components.
 - Feel free to customize the content according to your project's specific details. Add more sections or information as needed.
 CICI/CD pipeline configured with Jenkins and Docker./CD deployment enabled using Jenkins and Docker.
+CI/CD deployment verified using Jenkins and Docker.
